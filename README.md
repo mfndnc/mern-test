@@ -43,3 +43,35 @@ $ cd client
 $ yarn install
 $ yarn start
 ```
+
+
+## Major changer mfndnc
+moved server to root.
+removed yarn.lock
+adapted. 
+
+added .env file for server with
+```
+ MONGODB_URI=
+ PORT=
+ ENVLOCAL=local
+```
+
+added .env file for client
+```
+REACT_APP_MOVIEAPI=
+```
+
+### to run locally
+
+npm run dev in root
+
+npm run start in client
+
+
+
+### to upload
+
+npm run build in client
+
+
