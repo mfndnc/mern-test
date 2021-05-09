@@ -25,10 +25,10 @@ if (process.env.ENVLOCAL && process.env.ENVLOCAL === 'local') {
 } else {
   console.log('build app');
   const path = require('path');
-  app.use(express.static(path.join(__dirname, '..', '/client/build')));
+  app.use(express.static(path.join(__dirname, '/client/build')));
   app.use((req, res) => {
     // If no routes match, send them the React HTML.
-    res.sendFile(__dirname + '../build/index.html');
+    res.sendFile(__dirname + '/client/build/index.html');
   });
 }
 if (process.env.NODE_ENV === 'production') {
