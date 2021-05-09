@@ -1,5 +1,4 @@
 import axios from 'axios';
-console.log('process.env.MOVIEAPI', process.env.REACT_APP_MOVIEAPI);
 
 const api = axios.create({
   baseURL: process.env.REACT_APP_MOVIEAPI,
