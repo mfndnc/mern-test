@@ -8,7 +8,7 @@ const Title = styled.h1.attrs({
 })``
 
 const Wrapper = styled.div.attrs({
-    className: 'form-group',
+    className: 'container form-group',
 })`
     margin: 0 30px;
 `

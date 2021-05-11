@@ -11,11 +11,17 @@
     "mongoose": "^5.12.7"
   },
   "scripts": {
-    "dev": "nodemon index.js",
+    "devo": "nodemon index.js",
+    "debug": "nodemon --inspect index.js",
     "start": "node index.js",
-    "debug": "nodemon --inspect index.js"
+    "server": "node index.js",
+    "client": "npm start --prefix client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
   }
 }
