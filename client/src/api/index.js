@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL:
-    process.env.REACT_APP_MOVIEAPI || 'https://mer-test.herokuapp.com/api',
+  baseURL: process.env.REACT_APP_MOVIEAPI || '/api',
 });
 
 export const insertMovie = (payload) => api.post(`/movie`, payload);
