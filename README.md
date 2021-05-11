@@ -64,14 +64,6 @@ REACT_APP_MOVIEAPI=
 
 ### to run locally
 
-npm run dev in root
-
-npm run start in client
-
-
-
-### to upload
-
-npm run build in client
+npm run dev
 
 
